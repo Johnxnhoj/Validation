@@ -17,6 +17,7 @@ function Profile(Props) {
 
   function handleNameSubmit(e) {
     e.preventDefault()
+
     if (name === "") {
       setNameError("-  cannot be empty")
     } else {
@@ -49,9 +50,8 @@ function Profile(Props) {
       setWebsiteError("")
     }
     if (password !== confirm) {
-      setConfirmError("- password does not match")
-    } else {
-      setPasswordError("")
+      setConfirmError("- passwords do not match")
+      setPasswordError("- passwords do not match")
     }
   }
 
@@ -140,7 +140,7 @@ function Profile(Props) {
               />
             </div>
 
-            <button id="submit" type="submit">
+            <button id="submitted" type="Submit">
               submit
             </button>
           </form>
