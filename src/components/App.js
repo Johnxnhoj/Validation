@@ -9,7 +9,7 @@ function App(props) {
     <Router>
       <nav>
         <Route exact path="/" component={Profile} />
-        <Route path="/submitted" component={Updated} />
+        <Route path="/Updated" component={Updated} />
       </nav>
     </Router>
   )
